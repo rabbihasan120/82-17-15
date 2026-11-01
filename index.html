@@ -62,6 +62,11 @@
           <input type="password" id="loginPin" class="form-input" placeholder="Enter PIN" required inputmode="numeric">
         </div>
 
+        <div style="display:flex;align-items:center;gap:8px;margin-top:4px">
+          <input type="checkbox" id="loginRemember" style="width:16px;height:16px;accent-color:var(--accent);cursor:pointer">
+          <label for="loginRemember" style="font-size:13px;color:var(--text-secondary);cursor:pointer;user-select:none">Remember me</label>
+        </div>
+
         <button type="submit" class="btn btn-primary" style="margin-top:8px" id="loginSubmitBtn">Sign In</button>
       </form>
 
@@ -191,7 +196,7 @@
   </main>
 
   <!-- FAB (Add Expense) -->
-  <button class="fab" onclick="openAddModal()" aria-label="Add expense">
+  <button class="fab" id="fabAdd" onclick="openAddModal()" aria-label="Add expense">
     <i class="fa-solid fa-plus"></i>
   </button>
 
